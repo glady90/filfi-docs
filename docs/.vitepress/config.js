@@ -1,28 +1,75 @@
 export default {
-  title: "Filfi",
-  description: "filfi description",
+  title: "FilFi",
+  description: "FilFi description",
 
   themeConfig: {
-    siteTitle: "Filfi",
-    // logo: "/logo-core.svg",
-    socialLinks: [
-      { icon: "github", link: "https://github.com/orgs/filfi" },
-    ],
+    siteTitle: "FilFi Docs",
+    logo: "/logo.svg",
+    socialLinks: [{ icon: "github", link: "https://github.com/filfi" }],
 
-    nav: [{ text: "Guide", link: "/guide/about-filfi" }],
+    nav: [
+      { text: "Guide", link: "/en/guide/" },
+      { text: "Reference", link: "/en/reference/" },
+    ],
 
     sidebar: [
       {
+        // text: "Introduction",
+        items: [{ text: "Introduction", link: "/en/introduction" }],
+      },
+      {
         text: "Guide",
         items: [
-          { text: "About filfi", link: "/guide/about-filfi" },
+          { text: "Getting Started", link: "/en/guide/getting-started" },
+          { text: "Staker", link: "/en/guide/staker" },
+          { text: "Minner", link: "/en/guide/minner" },
+          {
+            text: "Storage Provider",
+            items: [
+              { text: "Getting Started", link: "/en/guide/getting-started-sp" },
+              { text: "Borrow FIL", link: "/en/guide/borrow" },
+              { text: "Raise FIL", link: "/en/guide/raise" },
+              { text: "Foundry", link: "/en/guide/foundry" },
+            ],
+          },
+          {
+            text: "Interest Model",
+            link: "/en/guide/interest-model"
+          },
+          {
+            text: "Liquidity Fund",
+            link: "/en/guide/fund"
+          }
+        ],
+      },
+      {
+        text: "Risk",
+        items: [
+          { text: "Overview", link: "/en/risk/" },
+          { text: "Metrics", link: "/en/risk/metrics" },
+          { text: "Discovery", link: "/en/risk/discovery" },
+          { text: "Liquidation", link: "/en/risk/liquidation" },
+        ],
+      },
+      {
+        text: "Security",
+        items: [{ text: "Bug Bounties", link: "/en/security/bounty" }],
+      },
+      {
+        text: "FilFi DAO",
+        items: [
+          { text: "Overview", link: "/en/dao/" },
+          { text: "Governance", link: "/en/dao/governance" },
+          { text: "Validator", link: "/en/dao/validator" },
+          { text: "Ambassador", link: "/en/dao/ambassador" },
+          { text: "FFI token", link: "/en/dao/ffi" },
+          { text: "Foundation", link: "/en/dao/foundation" },
         ],
       },
     ],
 
     footer: {
-      message:
-        "footer message",
+      message: "footer message",
       copyright:
         'Copyright © 2022-present <a href="https://github.com/filfi">Filfi</a>',
     },

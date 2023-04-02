@@ -4,7 +4,7 @@
   "description": "docs for filfi",
   "main": "index.js",
   "repository": "git@github.com:sxxfuture/filfi-doc.git",
-  "author": "GeekTR <geektheripper@gmail.com>",
+  "author": "Janckerchen <janckerchen@gmail.com>",
   "license": "MIT",
   "private": false,
   "scripts": {
